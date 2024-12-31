@@ -7,12 +7,12 @@ from tkinter import font
 
 # Setting up the serial connection with the Hexabitz module
 ser = serial.Serial(
-    port='/dev/ttyS0',
-    baudrate=115200,  # Try increasing baudrate
-    parity=serial.PARITY_NONE,
-    stopbits=serial.STOPBITS_ONE,
-    bytesize=serial.EIGHTBITS,
-    timeout=0.1  # Reduced timeout for faster reading
+port='/dev/ttyS0',
+baudrate=921600,
+parity=serial.PARITY_NONE,
+stopbits=serial.STOPBITS_ONE,
+bytesize=serial.EIGHTBITS,
+timeout=0
 )
 
 class EyeSignalProcessor:
